@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    #table{
+        border-collapse: collapse;
+    }
+</style>
 <body>
     <h2>Market Research Survery</h2>
     <p>Please take a few moments to complete thí satisfactions suvery.</p>
@@ -18,14 +23,14 @@
     </select> <br>
     <b style="margin-top: 10px;">What is your yearly income range?</b> <br>
     <select name="" id="" style="width: 200px;">
-        <option value="">$0-$25,000</option>
+        <option value="" name="">$0-$25,000</option>
         <option value="">30,000$-45,000$</option>
         <option value="">50,000$-65,000$</option>
     </select> <br>
     <b>Geder</b> <br>
 
-        <input type="radio">Male <br>
-        <input type="radio">Female
+        <input type="radio" name="geder">Male <br>
+        <input type="radio" name="geder">Female
 
     <div>
         <b>Which of the following product have your purchased in the last 2 months <br>
@@ -36,9 +41,9 @@
     </div>
     <div>
         <b>How often would you use new product?</b> <br>
-        <input type="radio"> Daily <br>
-         <input type="radio"> Weekly <br>
-         <input type="radio"> Monthly
+        <input type="radio" name="."> Daily <br>
+         <input type="radio"name=.> Weekly <br>
+         <input type="radio"name=.> Monthly
     </div>
     <div>
         <b>What would you pay for the new product</b> <br>
@@ -65,7 +70,7 @@
     </div>
     <div>
         <p>Please rate your level of agreement with the following statements.</p> <br>
-        <table border="1">
+        <table id="table" border="1">
             <tr style="background-color: rgb(165, 163, 163);">
             <td></td>
             <td>Strongly Disagree</td>
@@ -74,21 +79,21 @@
         </tr>
         <tr>
             <td><b>Our product are priced fairly.</b></td>
-            <td><input type="radio"></td>
-            <td><input type="radio"></td>
-            <td><input type="radio"></td>
+            <td><input type="radio"name="."></td>
+            <td><input type="radio"name="."></td>
+            <td><input type="radio"name="."></td>
         </tr>
         <tr style="background-color: rgb(165, 163, 163);">
             <td><b>Our product are high quality.</b></td>
-            <td><input type="radio"></td>
-            <td><input type="radio"></td>
-            <td><input type="radio"></td>
+            <td><input type="radio"name="."></td>
+            <td><input type="radio"name="."></td>
+            <td><input type="radio"name="."></td>
         </tr>
         <tr>                    
             <td><b>You would recommend our product to a firend or coworker.</b></td>
-            <td><input type="radio"></td>
-            <td><input type="radio"></td>
-            <td><input type="radio"></td>
+            <td><input type="radio"name="."></td>
+            <td><input type="radio"name="."></td>
+            <td><input type="radio"name="."></td>
         </tr>
         </table>
 
