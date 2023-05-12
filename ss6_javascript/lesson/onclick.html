@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p onclick="do_something()"><b>Tôi tên là Quân <br> <!--Su dung thuoc tinh onlick de bat su kien khi user kick chuot trai vao P-->
+    Tôi sinh 20/03/2002 tại Duy Trinh huyện Duy Xuyên tỉnh Quảng Nam <br>
+Hiện tại tôi là sinh viên năm 3 của Trường Đại học CNTT & TT Việt Hàn</b></p> <br>
+<p id="demo">Tình trạng sức khỏe của tôi</p>
+
+</body>
+</html>
+<script>
+    /* khi kick vao the P, ham do_somthing se duoc goi, ham nay do tu minh dinh nghia*/
+    function do_something(){
+        alert("Đây là thông tin cá nhân của tôi")
+    }
+
+
+    /*Su dung ham addEventListenner*/
+    var demo = document.getElementById("demo")
+
+    /*su dung ham addEventListener de bat su kien click*/
+    demo.addEventListener("click",clickFuntion) /*Truyen vao ham nay 2 tham so bao gom CLick là tên sự kiện, ClickF là hàm sẽ được gọi*/
+    function clickFuntion(){
+        alert("Tôi khỏe, cảm ơn bạn")
+    }
+</script>

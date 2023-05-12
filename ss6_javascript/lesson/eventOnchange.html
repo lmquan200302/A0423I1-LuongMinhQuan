@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>chon chiec xe ma ban muon</p>
+    
+    <select name="" id="myselec">
+        <option value="audi">Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="KIA">KIA</option>
+    </select>
+    <script>
+     /*
+     function do_something(){
+    var selectedValue = document.getElementById("myselec").value;
+    alert(selectedValue);
+     }
+     */
+
+     var selectedElement = document.getElementById("myselec"); /*Su dung ham document.getElenmetID() de lay thanh phan co id la myselec*/
+     selectedElement.addEventListener("change",changeFuntion); /*Su dung ham addEventListener de bat su kien change ,
+     Truyen vao ham nay 2 tham so bao gom Change:la ten su kien, changeFuntion la ham duoc goi*/
+     
+      function changeFuntion(){ /*Ham changeFution se hien thi gia tri duoc chon  duoi dang alert*/
+        var selectedValue = document.getElementById("myselec").value;
+    alert(selectedValue); 
+       
+     }
+    </script>
+</body>
+</html>
