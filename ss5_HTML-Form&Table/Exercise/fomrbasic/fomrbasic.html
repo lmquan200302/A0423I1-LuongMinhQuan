@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h2{
+        width: 400px;
+        height: 40px;
+        background-color: orange;
+        color: blue;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        }
+   .form{
+    width: 400px;
+    height: 350px;
+    border: 1px solid;
+   }
+  
+</style>
+<body>
+    <div class="form">
+    <h2>
+        Sở thích của bạn
+    </h2>
+    <form action="submit-form" method="GET">
+    <table>
+        <tr>
+            <td class="text">Họ và Tên</td> 
+            <td><input type="text"id="name"></td>
+        </tr>
+        
+        <tr>
+            <td class="text">Email</td>
+            <td><input type="text" id="email"></td>
+        </tr>
+        
+
+    </table>
+    <table>
+        <tr>
+            <td>Sở thích</td>
+            <td><input type="checkbox">Thể thao</td>
+            <td><input type="checkbox">Âm nhạc</td>
+            <td><input type="checkbox">Đọc sách</td>
+        
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox">Lướt Web</td>
+            <td><input type="checkbox">Chơi game</td>
+            <td><input type="checkbox">Điện ảnh</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox">Du lịch</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Gửi thông tin"></td>
+            <td><input type="reset" value="Nhập lại"></td>
+        </tr>
+    </table>
+</form>
+</div>
+</body>
+</html>
