@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ThuNhapCaNhan = parseInt(prompt("Nhập mức thu nhập cá nhân của bạn:"));
+        if(ThuNhapCaNhan>=10000000){
+            alert("Mức thuế mà bạn phải đóng là:" +ThuNhapCaNhan*3/100);
+        }else if(ThuNhapCaNhan>=15000000){
+            alert("Mức thuế mà bạn phải đóng là:"+ ThuNhapCaNhan*5/100);
+        }
+        else if (ThuNhapCaNhan>=20000000){
+            alert("Mức thuế mà bạn phải đóng là:" +ThuNhapCaNhan*7/100);
+        }
+        else{
+            alert("Bạn được miễn thuế");
+        }
+    </script>
+</body>
+</html>
