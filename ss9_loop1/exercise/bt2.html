@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nhietdo=+prompt("Nhập nhiệt độ của bạn");
+        while(isNaN(nhietdo)){
+            nhietdo=+prompt("Giá trị không hợp lệ vui lòng nhập lại");
+        }
+        if(nhietdo>=100){
+            alert("Nhiệt độ của bạn quá cao cần hạ xuống")
+            
+        }
+        else if(nhietdo<=20){
+            alert("Nhiệt độ quá thấp cần tăng lên");
+        }
+        else{
+            alert("Nhiệt độ phòng bạn đang ổn định")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      // Bước 1: Nhập số lượng số nguyên tố cần in ra
+var numbers = prompt("Nhap so nguyen to");
+
+// Bước 2: Khởi tạo biến count
+var count = 0;
+
+// Bước 3: Khởi tạo biến N
+var N = 2;
+
+// Bước 4: Vòng lặp while và for để tìm và in ra các số nguyên tố
+while (count < numbers) {
+  var isPrime = true;
+
+  // Kiểm tra xem N có phải là số nguyên tố không
+  for (var i = 2; i <= Math.sqrt(N); i++) {
+    if (N % i === 0) {
+      isPrime = false;
+      break;
+    }
+  }
+
+  // Nếu N là số nguyên tố, in ra giá trị của N và tăng giá trị của count lên 1
+  if (isPrime) {
+    document.write(N);
+    count++;
+  }
+
+  // Tăng giá trị của N lên 1 để kiểm tra số tiếp theo
+  N++;
+}
+
+
+
+    </script>
+</body>
+</html>
