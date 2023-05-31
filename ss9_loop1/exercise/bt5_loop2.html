@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let sotiengoc =+prompt('Nhập số tiền gốc');
+        while(isNaN(sotiengoc)){
+            alert("Giá trị không hợp lệ vui lòng nhập lại");
+            sotiengoc =+prompt('Nhập số tiền gốc');
+        }
+        
+
+        let thoigiangui =+prompt("Nhập thời gian gửi(năm)");
+        while(isNaN(thoigiangui)){
+            alert('Giá trị không hợp lệ vui lòng nhập lại');
+            thoigiangui =+prompt("Nhập thời gian gửi(năm)");
+        }
+        
+        let tilelaisuat =+prompt("Nhập mức lãi suất hàng năm");
+        while(isNaN(tilelaisuat)){
+            alert("Giá trị không hợp lệ vui lòng nhập lại");
+            tilelaisuat =+prompt("Nhập mức lãi suất hàng năm");
+
+        }
+        let laisuat = (sotiengoc *(tilelaisuat/100) *thoigiangui)/365
+        document.write('Lãi suất của bạn là: '+laisuat+' VND'); //Số tiền lãi = (Số tiền gốc * Tỷ lệ lãi suất * Thời gian gửi) / số ngày trong năm
+    </script>
+</body>
+</html>

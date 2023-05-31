@@ -8,13 +8,13 @@
 </head>
 <body>
     <script>
-        let sequence=[0,1];
-        for(i=2;i<1000;i++){
-            let nextNumber= sequence[i - 1]+ sequence[i - 2]; 
-// Công thức tính số Finobocci là F(0)=0, F(1)=1, F(n)=F(n-1)+F(n-2)
-            sequence.push(nextNumber);
-        }
-        document.write(sequence);
-    </script>
+        let sequence = [0,1];
+      for (i=2;i<=1000;i++){
+        let nextNumber = sequence[i-1] + sequence[i-2];
+        sequence.push(nextNumber);
+      }
+      
+      document.write(sequence);
+      </script>
 </body>
 </html>
