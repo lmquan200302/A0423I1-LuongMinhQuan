@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var array = ['so1','so2','so3'];
+        // for (let i=0;i<array.length;i++){
+        //     document.write('Gia tri cua mang la'+array[i]+'<br>');
+        // }
+        // var firstValue = array[0];
+        // document.write(firstValue);
+
+        // truy xuat phan tu cua mang
+        let moto = ['honda','yamaha','suzuki'];
+        
+        let firstMoto = moto[1];
+        
+        document.write(firstMoto);
+        
+        // gan gia tri cho mang
+        moto[2] ='wawetau';
+        document.write(moto);
+
+        // xem do dai cua Mang
+        let coutMoto = moto.length
+        document.write(coutMoto);
+
+        // Them phan tu vao mang
+       moto.push('z1000')
+        document.write(moto[moto.length - 1])
+        
+        //Them phan tu vao dau mang
+        moto.unshift('mt09')
+        document.write(moto[0]);
+
+    </script>
+</body>
+</html>

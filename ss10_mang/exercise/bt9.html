@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+      let a = prompt("Nhập mảng a gồm 10 phần tử:");
+      a.split(",").map(Number); // chuyển chuỗi thành mảng
+      let b = prompt("Nhập mảng b gồm 10 phần tử")
+      b.split(",").map(Number);
+
+      // Nối 2 mảng với nhau bằng hàm concat()
+      let c = a.concat(b);
+      document.write("Hàm sau khi được nối là"+c);
+    </script>
+</body>
+</html>
