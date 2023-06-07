@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input" placeholder="Nhập từ khóa bạn cần tìm kiếm">
+    <button onclick="search()">TÌM KIẾM</button>
+    <script>
+        let a = ["Một",'Hai','Ba'];
+        let b = ['One','Two','Three'];
+
+        function search(){
+        let isExist = false;
+
+
+            let input = document.getElementById('input').value;
+
+            for(let i=0;i<a.length;i++){
+                if(a[i]=== input){
+                    alert(b[i])
+                    isExist = true
+                    break;
+                }
+                
+               
+                    
+                }
+                
+
+                if(isExist  == false){
+                    console.log("not found");
+                }
+
+              
+               
+            }
+           
+
+
+        
+
+
+    </script>
+</body>
+</html>
