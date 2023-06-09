@@ -9,18 +9,27 @@
 <body>
     
 <script>
-   for(let i=1;i<=50;i++){
-    document.write("*");
+//    for(let i=1;i<=50;i++){
+//     document.write("*");
     
-   } 
-   document.write("<br>");
+//    } 
+//    document.write("<br>");
     
-   for (let a=1;a<10;a++){
-        document.write("*" + "&nbsp;".repeat(96) + "*" + "<br>");
-    }
-    for(let j=1;j<=50;j++){
-        document.write("*");
-    }
+//    for (let a=1;a<10;a++){
+//         document.write("*" + "&nbsp;".repeat(96) + "*" + "<br>");
+//     }
+//     for(let j=1;j<=50;j++){
+//         document.write("*");
+//     }
+    for(let i=1;i<=7;i++){
+        document.write("<br>");
+        if (i==7 || i== 1){
+        document.write("*".repeat(20));
+        } else {
+
+        document.write("*"+"&nbsp&nbsp".repeat(18) + "*");
+        }
+   }
 </script>
 
 </body>

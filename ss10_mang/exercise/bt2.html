@@ -8,15 +8,20 @@
 </head>
 <body>
     <script>
-        
-        let arr = [100,200,130,100,100];
-        let max=arr[0];
-        for(let i =0;i<arr.length;i++){
-            if(arr[i]>max) {
-                max=arr[i];
-            }
+       
+       let arr =  [10,20,30,40,50,60,70];
+       let max = arr[0];
+       for(let i=0;i<arr.length;i++){
+        if (arr[i]>max){
+            max=arr[i];
         }
-        console.log(max);
+     
+       }
+       // tim vi tri cua phan tu lon nhat
+       let index = arr.indexOf(max);
+       document.write("Giá trị lớn nhất trong mảng là: "+max+"<br>");
+       document.write("Giá trị lớn nhất "+max+ " nằm ở vị trí thứ : " + index);
+        
     </script>
 </body>
 </html>
