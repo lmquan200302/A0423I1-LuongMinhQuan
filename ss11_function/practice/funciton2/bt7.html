@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <input type="text" id="input" placeholder="Nhập số">
+        <button onclick="myFunction()">Click!</button>
+      
+        <script>
+          function myFunction() {
+            let arr = document.getElementById("input").value;
+            let newArr = arr.split(",").map(Number);
+            newArr.reverse();
+      
+            alert(newArr);
+          }
+        </script>
+</script>
+</html>

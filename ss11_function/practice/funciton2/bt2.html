@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div>
+    <p>Tinh Dien tich Hinh Tron</p>
+
+    <input type="text" id="s" placeholder="Nhap ban kinh">
+    <button onclick="sHinhtron()">Click</button>
+   </div>
+
+   <div>
+    <p>Tinh chu vi Hinh Tron</p>
+    <input type="text" id="v" placeholder="Nhap ban kinh">
+    <button onclick="vHinhtron()">Click</button>
+   </div>
+    
+</body>
+</html>
+<script>
+    function sHinhtron(){
+        let r = document.getElementById("s").value 
+        let  s = 3.14 * r ** 2;
+        alert(s);
+
+    }
+    function vHinhtron(){
+        let r = document.getElementById("v").value 
+        let  v = (r*2)*3.14;
+        alert(v);
+
+    }
+</script>

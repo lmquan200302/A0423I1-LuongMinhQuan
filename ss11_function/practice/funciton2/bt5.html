@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.</p>
+        <input type="text" id="a" placeholder="Nhap so a">
+        <input type="text" id="b" placeholder="Nhap so b">
+        <input type="text" id="c" placeholder="Nhap so c">
+
+        <button onclick="myFunction()">Click!</button>
+    </div>
+</body>
+<script>
+    function myFunction(){
+       let a = document.getElementById("a").value;
+       let b = document.getElementById("b").value;
+       let c = document.getElementById("c").value;
+       if(a<b&c){
+         alert("so nho nhat la:"+a)
+       }
+       else if(b<c){
+        alert("so nho nhat la:"+b)
+       }
+       else{
+        alert("so nho nhat la:"+c)
+       }
+    }
+</script>
+</html>
