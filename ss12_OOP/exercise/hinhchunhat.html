@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       class Rectangle {
+        constructor(chieudai,chieurong){
+            this.chieudai = chieudai;
+            this.chieurong = chieurong;
+           
+        }
+        Dientich(){
+            return this.chieudai * this.chieurong;
+        }
+        Chuvi() {
+            return (this.chieudai + this.chieurong) *2
+        }
+       }
+       let hinhchunhat = new Rectangle(6,7);
+
+       let resultDientich = hinhchunhat.Dientich();
+       document.write('Dien tich hinh chu nhat la' +resultDientich+"<br>")
+
+       let resultChuvi = hinhchunhat.Chuvi();
+       document.write('Chu vi hinh chu nhat la' +resultChuvi)
+    </script>
+</body>
+</html>

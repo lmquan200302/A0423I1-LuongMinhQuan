@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  
+    <table border="1" >
+        <tr>
+            <th>stt</th>
+            <th>loai</th>
+            <th>gia</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Nước ép cam</td>
+            <td>15.000Đ</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Nướt ép cà rốt</td>
+            <td>18.000Đ</td>
+        </tr>
+        <tr>
+           <td>3</td>
+           <td>Nước ép cà chua</td>
+           <td>20.000Đ</td>
+        </tr>
+    </table>
+    
+    <button onclick="order()">Order</button>
+</body>
+<script>
+  function order(){
+    let tong=0;
+    do{
+        input = prompt("Mời chọn món");
+        switch(input){
+            case '1':
+                alert("Nước cam giá 15.000Đ");
+                let soluong1 = prompt("mời nhập số lượng");
+                tong += 15000 * soluong1;
+                break;
+            case '2': 
+                alert("Nước ép cà rốt giá 18.000Đ");
+                let soluong2 = prompt("Mời bạn nhập số lượng");
+                tong += 18000 * soluong2;
+                break;
+            case '3':
+                alert("Nước ép cà chua giá 20.000Đ")
+                let soluong3 = prompt("Mời bạn nhập số lượng");
+                tong += 20000 * soluong3;
+                break;
+            
+                
+            default:
+                alert("Giá trị không hợp lệ mời chọn lại")
+        }
+    }
+    while (input !== '4');
+            
+            alert("Tổng số tiền cần phải trả: " + tong +"Đ");
+    
+
+  }
+
+</script>
+</html>

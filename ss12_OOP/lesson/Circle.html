@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Circle {
+            constructor (radius){
+                this.radius = radius;
+            }
+            getArea(){
+                return Math.PI * Math.pow(this.radius, 2);
+           
+            }
+        }
+            const hinhTron = new Circle(5);
+            const dienTich = hinhTron.getArea();
+
+            console.log("Diện tích hình tròn là: " + dienTich);
+
+    </script>
+</body>
+</html>

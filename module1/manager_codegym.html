@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+    div.form-hocvien{
+        width:500px;
+        border: 1px solid black;
+        margin: 15px;
+        padding: 10px;
+    }
+    div.form-hocvien h3{
+        padding: 0px;
+        margin-top: 0px;
+    }
+    div.form-hocvien label {
+        width: 100px;
+        float: left;
+        
+    }
+    div.form-hocvien input[type="text"],button{
+        margin-bottom: 10px;
+        width: 200px;
+        padding: 5px;
+    }
+    button{
+    margin-top: 10px;
+    
+    
+   }
+
+</style>
+<body onload="renderListStudent">
+    <div class="form-hocvien">
+    <h3>Hệ Thống Quản Lý CODEGYM</h3>
+    
+        <label for="">Mã học viên</label>
+        <input type="text"id=mhv>
+         <br>
+        <label for="">Tên học viên</label>
+        <input type="text" id="name">
+        <br>
+        <label for="">Lớp</label>
+        <input type="text" id="class">
+        <br>
+        <label for="">Email</label>
+        <input type="text" id="email">
+        <br>
+        <label for="">Ngày sinh</label>
+        <input type="text" id="birthday">
+        <br>
+        <label for="">Module</label>
+        <input type="text" id="module">
+
+        <div>
+            <label>&nbsp;</label>
+            <button onclick="save()" >Lưu lại</button>
+        </div>
+    </div>
+    <div id="list-students" class="list-student">
+        <h3>Danh sách sinh viên</h3>
+        <table id="grid-student" width="600" border="1" cellingpadding="0" cellpadding="0">
+        </table>
+      </div>
+</body>
+</html>
+<script>
+  let hocvien = localStorage.getItem("hocvien") ? JSON.parse(localStorage.getItem("hocvien")) : [];
+
+     function isValidEmail(email) {
+        // Kiểm tra định dạng email bằng regular expression
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+        }
+     function save(){
+        let Mahocvien = document.getElementById("mhv").value;
+        let Tenhocvien = document.getElementById("name").value;
+        let Lop = document.getElementById('class').value;
+        let Email = document.getElementById("email").value;
+        let Ngaysinh = document.getElementById("birthday").value;
+        let Module = document.getElementById("module").value;
+
+        
+        if(Mahocvien && Tenhocvien && Email && Ngaysinh && Module){
+            hocvien.push({
+                Mahocvien: Mahocvien,
+                Tenhocvien: Tenhocvien,
+                Lop: Lop,
+                Email: Email,
+                Ngaysinh: Ngaysinh
+            });
+
+            localStorage.setItem("hocvien", JSON.stringify(hocvien));
+            
+            this.renderListStudent();
+        }
+     }
+
+     function renderListStudent(){
+        if(hocvien.length ===0){
+            document.getElementById('list-students').style.display = 'none'
+            return false;
+        }
+        document.getElementById('list-students').style.display = 'block';
+        let tableContent = `
+        <tr>
+            <th>Mã học viên</th>
+            <th>Tên</th>
+            <th>Lớp</th>
+            <th>Email</th>
+            <th>Ngày sinh</th>
+        </tr>`;
+
+        console.log("-----------");
+        console.log(hocvien);
+
+        for (let i=0;i<hocvien.length;i++){
+            tableContent +=`
+        <tr>
+            <td>${hocvien[i].Mahocvien}</td>
+            <td>${hocvien[i].Tenhocvien}</td>
+            <td>${hocvien[i].Lop}</td>
+            <td>${hocvien[i].Email}</td>
+            <td>${hocvien[i].Ngaysinh}</td>
+        </tr>`
+        }
+       
+        document.getElementById('grid-student').innerHTML = tableContent;
+
+     }
+
+     renderListStudent();
+</script>
+

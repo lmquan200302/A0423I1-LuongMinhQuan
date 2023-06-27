@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+    div.form-student,
+    div.list-student{
+        width:500px;
+        border: 1px solid black;
+        margin: 15px;
+        padding: 10px;
+        float: left;
+    }
+    div.list-student{
+        width: 650px;
+    }
+    div.form-student h3{
+        padding: 0px;
+        margin-top: 0px;
+    }
+    div.form-student label {
+        width: 100px;
+        float: left;
+    }
+    div.form-student input[type="text"],button{
+        margin-bottom: 10px;
+        width: 200px;
+        padding: 5px;
+    }
+   button{
+    margin-top: 10px;
+   }
+   .erro{
+    color: red;
+   }
+   .erro-gd{
+    color: red;
+   }
+
+</style>
+<body onload="renderListStudent()">
+   <div class="form-student">
+    <h3>Quản lý sinh viên</h3> 
+    <label for="">Họ và tên</label>
+    <input type="text" id="fullname">
+    <span id="fullname-erro" class="erro"></span> <br>
+    
+
+    <label for="">Địa chỉ Email</label>
+    <input type="text" id="email">
+    <span id="email-erro" class="erro"></span> <br>
+
+    <label for="">Số điện thoại</label>
+    <input type="text" id="phone">
+    <span id="phone-erro" class="erro"></span> <br>
+
+    <label for="">Địa chỉ</label>
+    <input type="text" id="address">
+    <span id="address-erro" class="erro"></span> <br>
+
+    <label for="">Giới tính</label>
+    <input type="radio" name="gender" id="male" value="1"> Nam
+    <input type="radio" name="gender" id="fmale" value="2"> Nữ 
+    <span id="gender-erro" class="erro-gd"></span><br>
+     <label>&nbsp;</label>
+    <button onclick="save()">Lưu lại</button>
+</div>
+<div id="list-students" class="list-student">
+    <h3>Danh sách sinh viên</h3>
+    <table id="grid-student" width="600" border="1" cellingpadding="0" cellpadding="0">
+    </table>
+  </div>
+</body>
+</html>
+
+
+<script>
+    function isValidEmail(email) {
+        // Kiểm tra định dạng email bằng regular expression
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+
+    function save() {
+        let fullname = document.getElementById("fullname").value;
+        let email = document.getElementById("email").value;
+        let phone = document.getElementById("phone").value;
+        let address = document.getElementById("address").value;
+        let gender = '';
+
+        if (document.getElementById("male").checked) {
+            gender = document.getElementById("male").value;
+        } else if (document.getElementById('fmale').checked) {
+            gender = document.getElementById("fmale").value;
+        }
+
+        if (!fullname) {
+            document.getElementById("fullname-erro").innerHTML = '*Vui lòng nhập Tên ';
+        } else if (fullname.length <= 2) {
+            document.getElementById("fullname-erro").innerHTML = '*Tên quá ngắn';
+        } else {
+            document.getElementById("fullname-erro").innerHTML = '';
+        }
+
+        if (!email) {
+            document.getElementById("email-erro").innerHTML = '*Vui lòng nhập Email ';
+        } else if (!isValidEmail(email)) {
+            document.getElementById("email-erro").innerHTML = '*email không đúng ';
+        } else {
+            document.getElementById("email-erro").innerHTML = '';
+        }
+
+        if (!phone) {
+            document.getElementById("phone-erro").innerHTML = '*Vui lòng nhập Số điện thoại ';
+        } else if (phone.length < 10 || phone.length > 30 || !String) {
+            document.getElementById("phone-erro").innerHTML = '*SDT không đúng định dạng';
+        } else {
+            document.getElementById("phone-erro").innerHTML = '';
+        }
+
+        if (!address) {
+            document.getElementById("address-erro").innerHTML = '*Vui lòng nhập Địa chỉ ';
+        } else {
+            document.getElementById("address-erro").innerHTML = '';
+        }
+
+        if (!gender) {
+            document.getElementById("gender-erro").innerHTML = '*Vui lòng chọn giới tính';
+        } else {
+            document.getElementById("gender-erro").innerHTML = '';
+        }
+
+        if (fullname && email && phone && address) {
+
+            let students = localStorage.getItem("students") ? JSON.parse(localStorage.getItem("students")) : [];
+
+            students.push({
+                fullname: fullname,
+                email: email,
+                phone: phone,
+                address: address,
+                gender: gender
+            });
+
+            // Lưu danh sách sinh viên vào localStorage
+            localStorage.setItem("students", JSON.stringify(students));
+            
+            this.renderListStudent();
+        }
+    }
+
+    function renderListStudent() {
+        let students = localStorage.getItem("students") ? JSON.parse(localStorage.getItem("students")) : [];
+        console.log(students.length);
+        if (students.length === 0) {
+            document.getElementById('list-students').style.display = 'none';
+            return false;
+        }
+
+        document.getElementById('list-students').style.display = 'block';
+
+        let tableContent = `
+            <tr>
+                <th>STT</th>
+                <th>Họ và tên</th>
+                <th>Email</th>
+                <th>Số điện thoại</th>
+                <th>Địa chỉ</th>
+                <th>Giới tính</th>
+                <th>Hành động</th>
+            </tr>`;
+
+        students.forEach((student, index) => {
+            index++;
+            let studentId = index;
+            let genderLabel = student.gender === 1 ? 'Nam' : 'Nữ';
+            tableContent += `
+                <tr>
+                    <td>${index}</td>
+                    <td>${student.fullname}</td>
+                    <td>${student.email}</td>
+                    <td>${student.phone}</td>
+                    <td>${student.address}</td>
+                    <td>${genderLabel}</td>
+                    <td>
+                        <a href='#' onclick='editStudent(${studentId})'>Edit</a> | <a onclick='deleteStudent(${studentId})'  href='#'>Delete</a>
+                    </td>
+                </tr>`;
+        });
+
+        document.getElementById('grid-student').innerHTML = tableContent;
+    }
+
+   
+
+</script>

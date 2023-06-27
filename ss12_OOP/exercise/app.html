@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Mobile {
+  constructor() {
+    this.pin = 100;
+    this.dangSoanThao = '';
+    this.hopThuDen = [];
+    this.hopThuDi = [];
+    this.bat = false;
+  }
+
+  kiemTraTrangThai() {
+    return this.bat ? 'Điện thoại đang bật' : 'Điện thoại đang tắt';
+  }
+
+  batDienThoai() {
+    this.bat = true;
+  }
+
+  tatDienThoai() {
+    this.bat = false;
+  }
+
+  sacPin() {
+    if (this.pin < 100) {
+      this.pin = 100;
+    }
+  }
+
+  soanTinNhan(noiDung) {
+    if (this.bat) {
+      this.dangSoanThao = noiDung;
+      this.pin -= 1;
+    }
+  }
+
+  nhanTinNhan(noiDung, nguoiGui) {
+    if (this.bat) {
+      this.hopThuDen.push({ noiDung, nguoiGui });
+      this.pin -= 1;
+    }
+  }
+
+  guiTinNhan(noiDung, nguoiNhan) {
+    if (this.bat) {
+      this.hopThuDi.push({ noiDung, nguoiNhan });
+      this.pin -= 1;
+    }
+  }
+
+  xemHopThuDen() {
+    if (this.bat) {
+      console.log('--- Hộp thư đến ---');
+      for (let i = 0; i < this.hopThuDen.length; i++) {
+        console.log('Nội dung: ' + this.hopThuDen[i].noiDung + ', Người gửi: ' + this.hopThuDen[i].nguoiGui);
+      }
+      console.log('-------------------');
+      this.pin -= 1;
+    }
+  }
+
+  xemHopThuDi() {
+    if (this.bat) {
+      console.log('--- Hộp thư đi ---');
+      for (let i = 0; i < this.hopThuDi.length; i++) {
+        console.log('Nội dung: ' + this.hopThuDi[i].noiDung + ', Người nhận: ' + this.hopThuDi[i].nguoiNhan);
+      }
+      console.log('-----------------');
+      this.pin -= 1;
+    }
+  }
+}
+
+// Khởi tạo các đối tượng điện thoại
+const nokia = new Mobile();
+const iphone = new Mobile();
+
+// Nokia soạn tin và gửi cho iPhone
+nokia.soanTinNhan('Xin chào iPhone!');
+nokia.guiTinNhan(nokia.dangSoanThao, 'iPhone');
+
+// iPhone kiểm tra hộp thư đến và hiển thị tin nhắn
+iphone.xemHopThuDen();
+
+    </script>
+</body>
+</html>
