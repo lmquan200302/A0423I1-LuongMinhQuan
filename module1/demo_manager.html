@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="add()">Thêm mới học viên </button> 
+    <button onclick="edit()">Sửa thông tin học viên</button> 
+    <button onclick="deletee()">Xóa thông tin</button>
+    <table style="margin-top: 30px; border-collapse: collapse;  " id="render" border="1" ></table>
+    a. <input type="list" name="city" >
+    
+
+</body>
+<script>
+    class students{
+        constructor (id, name, classid, birthday, email){
+            this.id = id;
+            this.name = name;
+            this.classid = classid;
+            this.birthday = birthday;
+            this.email = email;
+        }
+    }
+    
+    var data = [];
+    function add(){
+        let id_hocvien = prompt('Nhập mã học viên');
+        let name_hocvien = prompt("Nhập tên học viên");
+        let class_hocvien = prompt("Nhập lớp học viên");
+        let email_hocvien = prompt("Nhập Email học viên");
+        let birthday_hocvien = prompt("Nhập ngày sinh học viên");
+        let item = new students (id_hocvien, name_hocvien, class_hocvien, birthday_hocvien, email_hocvien);
+
+        if(name_hocvien>50){
+            alert("Không hợp lệ")
+        }
+        
+        data.push(item);
+        render();
+       
+    }
+
+    function render(){
+        var table = `<tr>
+            <th>Mã học viên</th>
+            <th>Tên học viên</th>
+            <th>Lớp</th>
+            <th>Email</th>
+            <th>Ngày sinh</th>
+            </tr>`
+        for(let i=0;i<data.length;i++){
+            table += `<tr>
+                <td>${data[i].id}</td>
+                <td>${data[i].name}</td>
+                <td>${data[i].classid}</td>
+                <td>${data[i].email}</td>
+                <td>${data[i].birthday}</td>    
+                </tr>`
+        }
+        document.getElementById("render").innerHTML = table;
+
+    }
+   
+    function deletee(){
+        let id_hocvien = prompt('Nhập mã học viên');
+
+        for (let i=0;i<data.length;i++){
+            if(data[i].id == id_hocvien){
+                confirm("bạn có muốn xóa không");
+                data.splice(i,1)
+                break;
+                
+            }
+            else{
+               
+                render();
+            }
+        }
+
+        
+    }
+
+    function edit(){
+        let id_hocvien = prompt('Nhập mã học viên');
+        for(let i=0;i<data.length;i++){
+            if(id_hocvien == data[i].id){
+               name_hocvien = prompt("Nhập tên học viên cần sửa");
+                class_hocvien = prompt("Nhập lớp học viên cần sửa ");
+                email_hocvien = prompt("Nhập Email học viên cần sửa ");
+                birthday_hocvien = prompt("Nhập ngày sinh học viên cần sửa ");
+                
+                data[i].name = name_hocvien;
+                data[i].classid = class_hocvien;
+                data[i].email = email_hocvien;
+                data[i].birthday = birthday_hocvien;
+
+
+
+            }
+            else{
+                alert('Mã sinh viên không tồn tại');
+            }
+        }
+        
+        render();
+        
+    }
+    
+
+
+</script>
+</html>

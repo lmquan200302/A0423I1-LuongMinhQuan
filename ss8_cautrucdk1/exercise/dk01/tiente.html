@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Swap Currency</h1>
+    </div>
+    <div>
+        <label>
+          <div>From Currency
+            <br><br><select style="width: 7%;height: 25px;" id="fcurrency">
+            <option ></option>
+            <option id="VND">VND</option>
+            <option id="USA">USD</option>
+        </select></div>
+        <br><br><br><br><div>To Currency
+            <br><br><select style="width: 7%;height: 25px;" id="tcurrency">
+             <option ></option>
+             <option id="VND">VND</option>
+             <option id="USA">USD</option>
+            </select>
+        </div>
+        <br><br><br><div>Amount
+        <input type="text" id="amount" >
+        <button style="width: 7%;height: 25px;" onclick="showMessage()">ClickOn!</button>
+        </div>
+        </label>
+    </div>
+
+</body>
+
+</html>
+<script>
+    function showMessage() {
+        var a = document.getElementById('fcurrency').value;
+        var b = document.getElementById('tcurrency').value;
+        var result = document.getElementById('amount').value;
+
+        if (a == 'VND' && b == 'USD') {
+            alert('Swap: ' + result);
+        } else if (a == 'USD' && b == 'VND') {
+            alert('Swap:' + result * 24000);
+        } else if (a == 'USD' && b == 'VND') {
+
+            alert("Swap: " + result / 24000)
+        }
+
+    }
+</script>

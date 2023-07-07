@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input1">
+    <input type="text" id="input2">
+    <button onclick="cong()">+</button> 
+    <button onclick="tru()">-</button>
+
+    <button onclick="nhan()">X</button>
+    <button onclick="chia()">/</button>
+</body>
+<script> 
+    function cong(){
+        var o1 = +document.getElementById('input1').value;
+        var o2 = +document.getElementById("input2").value;
+        let ketqua = o1 + o2
+        alert(ketqua);
+    }
+    function tru(){
+        var o1 = +document.getElementById('input1').value;
+        var o2 = +document.getElementById("input2").value;
+        let ketqua = o1 - o2
+        alert(ketqua);
+    }
+    function nhan(){
+        var o1 = +document.getElementById('input1').value;
+        var o2 = +document.getElementById("input2").value;
+        let ketqua = o1 * o2
+        alert(ketqua);
+    }
+    function chia(){
+        var o1 = +document.getElementById('input1').value;
+        var o2 = +document.getElementById("input2").value;
+        let ketqua = o1 / o2
+        alert(ketqua);
+    }
+
+</script>
+</html>

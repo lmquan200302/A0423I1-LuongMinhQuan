@@ -2,23 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="thang" placeholder="Nhập số tháng:">
-    <input type="button" onclick="tinh()"value="Tinh so ngay">
-    <script>
-        let thang = document.getElementById("thang").value;
-       
-        switch(tinh()){
-            case 1:{
-                alert("day la thang 1")
-            }
-
-        }
-       
-    </script>
+    <input type="text" id="input">
+    <button onclick="save()">click</button>
 </body>
+<script>
+    
+    function save(){
+        let input = document.getElementById('input').value;
+        switch(input){
+            case '01/2020':
+                alert("Tháng 1 có 31 ngày");
+                break;
+            case '02/2020':
+                alert("THáng 2 có 28 hoặc 29 ngày")
+                break;
+            case '03/2020':
+                alert('Tháng 3 có 31 ngày');
+                break;
+            case '04/2020':
+                alert("Tháng 4 có 30 ngày");
+                break;
+            case '05/2020':
+                alert('Tháng 5 có 31 ngày');
+                break;
+            case '06/2020': 
+                alert('Tháng 6 có 30 ngày');
+                break;
+            case '07/2020':
+                alert('Tháng 7 có 31 ngày');
+                break;
+            case '08/2020':
+                alert("Tháng 8 có 31 ngày");
+                break;
+            case '09/2020':
+                alert("Tháng 9 có 30 ngày");
+                break;
+            case '10/2020':
+                alert("Tháng 10 có 31 ngày");
+                break;
+            case '11/2020':
+                alert("Tháng 11 có 30 ngày");
+                break;
+            case '12/2020':
+                alert("Tháng 12 có 31 ngày");
+                break;
+        }
+
+    }
+</script>
 </html>

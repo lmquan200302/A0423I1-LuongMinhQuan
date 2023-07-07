@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" style="width: 400px;height: 300px;">
+        <tr>
+            <th>STT</th>
+            <th>Thực đơn</th>
+            <th>Giá</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <td>Nước ép cam</td>
+            <td>15.000Đ</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>Nước ép cà rốt</td>
+            <td>18.000Đ</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>Nước ép cà chua</td>
+            <td>20.000Đ</td>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td>Nước lọc</td>
+            <td>10.000Đ</td>
+        </tr>
+        <tr>
+            <th>5</th>
+            <td>Nước dừa</td>
+            <td>25.000Đ</td>
+        </tr>
+        <tr>
+            <th>6</th>
+            <td>Cafe</td>
+            <td>18.000Đ</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td colspan="3">Thanh toán</td>
+        </tr>
+        
+    </table>
+    <td><button style="width: 55px;" onclick="oder()">Oder</button></td>
+    <p id="tongtien"></p>
+
+    <script>
+        function oder() {
+            var soluong;
+            var tong = 0;
+            
+
+            do {
+                var inputvalue = prompt("Mời chọn món");
+                switch (inputvalue) {
+                    case '1':
+                        alert("Nước ép cam giá 15.000Đ");
+                        soluong = parseInt(prompt('Mời nhập số lượng'));
+                        tong += soluong * 15000;
+                        break;
+                    case '2':
+                        alert("Nước ép cà rốt giá 18.000Đ");
+                        soluong = parseInt(prompt('Mời nhập số lượng'));
+                        tong += soluong * 18000;
+                        break;
+                    case '3':
+                        alert("Nước ép cà chua giá 20.000Đ");
+                        soluong = parseInt(prompt('Mời nhập số lượng'));
+                        tong += soluong * 20000;
+                        break;
+                    case '4':
+                        alert("Nước lọc giá 10.000Đ");
+                        soluong = parseInt(prompt('Mời nhập số lượng'));
+                        tong += soluong * 10000;
+                        break;
+                    case '5':
+                        alert("Nước dừa giá 25.000Đ");
+                        soluong = parseInt(prompt('Mời nhập số lượng'));
+                        tong += soluong * 25000;
+                        break;
+                    case '6':
+                        alert("Cafe giá 18.000Đ");
+                        soluong = parseInt(prompt('Mời nhập số lượng'));
+                        tong += soluong * 18000;
+                        break;
+                    case '7':
+                        break;
+                   
+                    default:
+                        alert("Sai số thực đơn");
+                        break;
+                }
+            } while (inputvalue !== '7');
+
+            document.getElementById("tongtien").innerHTML = "Tổng hóa đơn của bạn là: " + tong + "Đ";
+        }
+    </script>
+</body>
+</html>

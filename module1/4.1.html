@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function capitalizeFirstLetter(string) {
+  // Chuyển đổi chữ cái đầu thành chữ hoa
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+function main() {
+  let inputString = prompt("Nhập chuỗi:");
+
+  let capitalizedString = capitalizeFirstLetter(inputString);
+  console.log("Chuỗi viết hoa chữ cái đầu:", capitalizedString);
+}
+
+main();
+
+</script>
+</html>

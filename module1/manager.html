@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .form-hocvien{
+        width:350px;
+        height: 300px;
+        border: 3px black solid;
+        margin: 15px;
+        padding: 10px;
+        
+    }
+    .list-hocvien{
+        float: left;
+
+    }
+    .form-hocvien h3 {
+        padding: 0px;
+        margin-top: 0px;
+
+    }
+    .form-hocvien label{
+        width: 100px;
+        float: left;
+    }
+    div.form-hocvien input[type="text"]{
+        margin-bottom: 15px;
+        width: 200px;
+        padding: 5px;
+        
+    }
+    #bt1{
+        width: 200px;
+        height: 25px;
+        background-color: green;
+        color:white;
+        margin-top: 10px;
+    }
+    
+
+
+</style>
+
+
+<body>
+    
+    
+    <div class="form-hocvien" >
+        <h3>Quản lý Sinh Viên</h3>
+        <label for="">Mã học viên</label>
+        <input type="text" id="id"> <br>
+        <label for="">Họ và tên</label>
+        <input type="text" id="name"> <br>
+        <label for="">Class</label>
+        <input type="text" id="class"> <br>
+        <label for="">Email</label>
+        <input type="text" id="email"> <br>
+        <label for="">Ngày sinh</label>
+        <input type="text" id="birthday"> <br>
+        <label for="">&nbsp;</label>
+        <button id="bt1" onclick="save()">Save</button>
+    </div>
+
+    <div>
+        <table border="1" id="render" class="list-hocvien"></table>
+    </div>
+         
+</body>
+
+<script>
+    let data = [];
+    function save(){
+
+        let id_hocvien = document.getElementById("id").value;
+        let name_hocvien = document.getElementById("name").value;
+        let class_hocvien = document.getElementById("class").value;
+        let email_hocvien = document.getElementById("email").value;
+        let birthday_hocvienn = document.getElementById("birthday").value;
+
+        var item = {
+            Id: id_hocvien,
+            Name: name_hocvien,
+            Class: class_hocvien,
+            Email: email_hocvien,
+            Birthday: birthday_hocvienn
+        };
+        data.push(item); // Thêm sinh viên mới vào mảng dữ liệu
+        render();
+        clear();
+    }
+    function render(){
+           var table = ` <tr>
+            <th>ID</th>
+            <th>Họ và Tên</th>
+            <th>Lớp</th>
+            <th>Email</th>
+            <th>Ngày sinh</th>
+            <th colspan='2'>Action</th>
+            </tr>`;
+       
+        for(let i=0;i<data.length;i++){
+            table += ` <tr>
+            <td>${data[i].Id}</td>
+            <td>${data[i].Name}</td>
+            <td>${data[i].Class}</td>
+            <td>${data[i].Email}</td>
+            <td>${data[i].Birthday}</td>
+            <td><button onclick='deleteItem(${data[i].Id})'>Delete</button></td>
+            <td><button onclick='editItem(${data[i].Id})'>Edit</button></td>
+            </tr>`;
+        }
+        document.getElementById("render").innerHTML = table;
+    }
+       
+
+        // Xóa danh sách sinh viên
+        function clear(){
+            document.getElementById("id").value = ''
+            document.getElementById("name").value = ''
+            document.getElementById("class").value = ''
+            document.getElementById("email").value = ''
+            document.getElementById("birthday").value = ''
+
+            
+        }
+
+        function deleteItem(item){
+            for(let i=0;i<data.length;i++){
+                if(data[i].Id == item){
+                    data.splice(i,1) //xóa đi 1 phần tử từ vị trí i trong mảng data.
+                    render()
+                }
+            }
+        
+        
+                }
+                    //chinh sua sinh vien
+        function editItem(item){
+            for(let i=0;i<data.length;i++){
+                if(data[i].Id == item ){
+                    document.getElementById("id").value = data[i].Id;
+                    document.getElementById("name").value = data[i].Name;
+                    document.getElementById("class").value = data[i].Class;
+                    document.getElementById("email").value = data[i].Email;
+                    document.getElementById("birthday").value = data[i].Birthday;
+                    render()
+            }
+
+        }
+        }
+    
+        
+</script>
+</html>

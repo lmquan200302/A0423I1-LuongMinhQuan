@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <center><p id="the">frqwerqw</p></center>
+    <script>
+            // let input = prompt("Nhap chieu cao h")
+            // for(let i=0;i<=input;i++){
+            //     for(let j=0;j<=i;j++){
+            //         document.write("*");
+            //     }
+            //     document.write("<br>");
+            // }
+        let n = prompt("Nhap chieu cao h");
+        let vanban="";
+        let sosao=0;
+        for (let i=1;i<=n;i++){
+            if (i==1){
+                sosao=1;
+            } else {
+                sosao +=2;
+            }
+            vanban=vanban + "*".repeat(sosao) + "<br>";
+        }
+        document.getElementById("the").innerHTML=vanban;
+        //tam giac rong
+        for (let i=1;i<=n;i++){
+            if (i==1){
+                vanban=vanban + "*" + "<br>";
+            } else if (i<n) {
+                vanban=vanban + "*" + "&nbsp"  + "*" + "<br>";
+            } else {
+                vanban=vanban + "*".repeat(i+1);
+            }
+        }
+        document.getElementById("the").innerHTML='<table><tr><td style="border: solid 1px green;">1</td><td>1</td></tr></table>'
+
+    </script>
+    
+    <p>
+        
+        
+    </p>
+    
+</body>
+</html>

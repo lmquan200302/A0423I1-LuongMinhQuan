@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+table, th, td {
+    margin-top: 20px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+</style>
+<body>
+    <h1>Student Manager</h1>
+    <label>Id Student</label>
+    <input type="text" id="id"><br>
+    <label>Name</label>
+    <input type="text" id="name"><br>
+    <label>Module</label>
+    <input type="text" id="module"><br>
+    <label>Email</label>
+    <input type="text" id="email"> <br>
+    <label>Phone</label>
+    <input type="text" id="phone"> <br>
+    <button onclick="save()">Save</button>
+    <table id="showStudentList">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Module</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+    </table>
+  
+</body>
+<script>
+    let isEdit = false;
+    var ListStudent = [];
+    
+    class Student {
+        constructor(id, name, module, email, phone) {
+            this.id = id;
+            this.name = name;
+            this.module = module;
+            this.email = email;
+            this.phone = phone;
+        }
+    }
+    
+    class StudentMethod {
+        add(student) {
+            ListStudent.push(student);
+        }
+        
+        edit(student) {
+            for (let i = 0; i < ListStudent.length; i++) {
+                if (ListStudent[i].id === student.id) {
+                    ListStudent[i] = student;
+                    break;
+                }
+            }
+        }
+        
+        delete(id){
+            for (let i = 0; i < ListStudent.length; i++) {
+                if (ListStudent[i].id === id) {
+                    ListStudent.splice(i, 1);
+                    break;
+                }
+            }
+        }
+    } 
+
+    var studentMethod = new StudentMethod();
+
+    function save(){
+        let id = document.getElementById('id').value;
+        let name = document.getElementById('name').value;
+        let module = document.getElementById('module').value;
+        let email = document.getElementById('email').value;
+        let phone = document.getElementById('phone').value;
+        let student = new Student(id, name, module, email, phone);
+        studentMethod.add(student);
+        showStudentList();
+    }
+
+    function showStudentList() {
+        var table = ` <tr>
+            <th>ID</th>
+            <th>Họ và Tên</th>
+            <th>Module</th>
+            <th>Email</th>
+            <th>Phone   </th>
+            <th colspan='2'>Action </th>
+            </tr>`;
+        
+        for (let i = 0; i < ListStudent.length; i++) {
+            table += `<tr>
+                <td>${ListStudent[i].id}</td>
+                <td>${ListStudent[i].name}</td>
+                <td>${ListStudent[i].module}</td>
+                <td>${ListStudent[i].email}</td>
+                <td>${ListStudent[i].phone}</td>
+                <td>
+                    <button onclick="edit('${ListStudent[i].id}','${ListStudent[i].name}','${ListStudent[i].module}','${ListStudent[i].email}','${ListStudent[i].phone}')">Edit</button>|<button onclick="deletee('${ListStudent[i].id}')">Delete</button>
+                </td>
+            </tr>`;
+        }
+
+
+        document.querySelector('tbody').innerHTML = table;
+    }
+
+    function deletee(id){
+        studentMethod.delete(id);
+        showStudentList();
+    }
+    
+   function edit(id, name, module, email, phone){
+    // 
+            document.getElementById('id').value = id;
+            document.getElementById('name').value = name;
+            document.getElementById('module').value = module;
+            document.getElementById('email').value = email;
+            document.getElementById('phone').value = phone;
+            isEdit = true;
+    
+   }
+   showStudentList();
+
+
+
+    
+</script>
+</html>
+
+

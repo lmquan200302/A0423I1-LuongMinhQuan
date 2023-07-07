@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = prompt("Nhập mảng của bạn, các số cách nhau bằng dấu phẩy (,)");
+arr = arr.split(',').map(Number);
+
+let sum = 0;
+let count = 0;
+
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] % 3 === 0) {
+    sum += arr[i];
+    count++;
+  }
+}
+
+let average = sum / count;
+
+document.write(average);
+    </script>
+</body>
+</html>
