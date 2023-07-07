@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tinhLaiNganHang(soTienBanDau, soThangChoVay, laiXuatHangThang) {
+  
+  const tiLeLaiXuat = laiXuatHangThang / 100;
+  const tongSoTien = soTienBanDau * Math.pow(1 + tiLeLaiXuat, soThangChoVay);
+
+  // Tính lãi gốc
+  const laiGoc = tongSoTien - soTienBanDau;
+
+  // Trả về tổng số tiền và lãi gốc
+  return {
+    tongSoTien: tongSoTien.toFixed(2),
+    laiGoc: laiGoc.toFixed(2)
+  };
+}
+
+
+const soTienBanDau = 1000000; 
+const soThangChoVay = 12; 
+const laiXuatHangThang = 0.8; 
+
+const ketQua = tinhLaiNganHang(soTienBanDau, soThangChoVay, laiXuatHangThang);
+
+console.log("Tổng số tiền sau " + soThangChoVay + " tháng là: " + ketQua.tongSoTien + " đồng");
+console.log("Lãi gốc sau " + soThangChoVay + " tháng là: " + ketQua.laiGoc + " đồng");
+
+    </script>
+</body>
+</html>
