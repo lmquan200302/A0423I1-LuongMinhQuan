@@ -5,9 +5,8 @@ import java.util.Scanner;
 
 public class bai3 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        for(int i=2; i<=n; i++){
+
+        for(int i=2; i<=100; i++){
             if(check(i)){
                 System.out.print(i+" ");
 
