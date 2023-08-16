@@ -1,55 +1,39 @@
 package _08_DSA.BaiTap.BT_1_ArrayList;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 
-public class MyList<E>{
-    private  ArrayList<Object> list;
-    private int size = 0;
-    static final int DEFAULT_CAPACITY = 10;
-    private Object element[];
+public class MyList{
+    private int size = 10;
+    private static final int DEFAULT_CAPACTY = 10;
+    private Object elenments[];
 
-    public MyList(){
-        list = new ArrayList<>();
 
-    }
-    //void add(int index, E element)
-    public void add(int index, E element){
-        list.add(index,element);
+    public MyList() {
+        this.size = size;
+        this.elenments = elenments;
     }
 
-
-    //E remove(int index)
-    public void  remove(int index){
-       list.remove(index);
+    public int getSize() {
+        return size;
     }
 
-
-    //int size
-    public int size() {
-        return list.size();
+    public void setSize(int size) {
+        this.size = size;
     }
 
-    //int boolean contains(E o)
-    public boolean contains(Object element) {
-        return list.contains(element);
+    public Object[] getElenments() {
+        return elenments;
     }
 
-
-    //E Clone()
-    // E get (int index)
-    public void get(int index){
-        list.get(index);
-
+    public void setElenments(Object[] elenments) {
+        this.elenments = elenments;
     }
 
-    public int indexOf(E element){
-        return list.indexOf(element);
+    @Override
+    public String toString() {
+        return "MyList{" +
+                "size=" + size +
+                ", elenments=" + Arrays.toString(elenments) +
+                '}';
     }
-
-
-    //print mylist
-    public void printList() {
-        System.out.println("MyList: " + list);
-    }
-
 }

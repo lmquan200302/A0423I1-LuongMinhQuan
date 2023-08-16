@@ -5,14 +5,14 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Scanner;
 
-public class listProduct {
+public class ProductService {
     Scanner sc = new Scanner(System.in);
     private ArrayList<Product> list;
-    public listProduct() {
+    public ProductService() {
         this.list = new ArrayList<Product>();
     }
 
-    public listProduct(ArrayList<Product> list) {
+    public ProductService(ArrayList<Product> list) {
         this.list = list;
     }
 
@@ -52,7 +52,8 @@ public class listProduct {
                 Double newPriceProduct = sc.nextDouble();
 
                 Product sanpham = new Product(id,newNameProduct,newPriceProduct);
-
+                list.set(i, sanpham);
+                break;
             }
         }
    }

@@ -2,11 +2,11 @@ package _10_Java_Collection_Framework.BaiTap.Product;
 
 import java.util.Scanner;
 
-public class testProduct {
+public class TestProduct {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int input = 0;
-        listProduct listProduct = new listProduct();
+        ProductService ProductService = new ProductService();
         System.out.println("SELECT");
         System.out.println("-----------------------");
         System.out.println("1.Them san pham");
@@ -39,34 +39,34 @@ public class testProduct {
                     sc.nextLine();
 
                     Product product = new Product(id, name, price);
-                    listProduct.addProduct(product);
+                    ProductService.addProduct(product);
                     break;
                 case 2:
                     System.out.print("Nhap ID san pham ban muon sua: ");
                     id = sc.nextInt();
-                    listProduct.editProduct(id);
+                    ProductService.editProduct(id);
 
                     break;
                 case 3:
                     System.out.print("Nhap ID san pham ban can xoa: ");
                     id = sc.nextInt();
                     Product product1 = new Product(id);
-                    listProduct.deleteProduct(id);
+                    ProductService.deleteProduct(id);
 
                     break;
                 case 4:
                     System.out.println("Hien thi danh sach san pham");
-                    listProduct.displayProduct();
+                    ProductService.displayProduct();
                     break;
                 case 5:
                     System.out.print("Nhap ten san pham ban tim: ");
                     name = sc.nextLine();
                     System.out.print("San pham ban tim: ");
-                    listProduct.searchProduct(name);
+                    ProductService.searchProduct(name);
                     break;
                 case 6:
                     System.out.println("Sap xep thanh cong san pham theo gia tien");
-                    listProduct.SortDescending();
+                    ProductService.SortDescending();
                     break;
                 case 7:
                     System.out.println("EXIT");
