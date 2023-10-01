@@ -18,8 +18,10 @@ public class Main {
             IllegalTriangleException.TamGiac tamGiac = new IllegalTriangleException.TamGiac(canhA,canhB,canhC);
             System.out.println("He so cac canh cua hinh tam giac la: " + canhA + canhB + canhC);
 
-        }catch (IllegalTriangleException exception){
+        }catch ( IllegalTriangleException exception){
             System.err.println(exception.getMessage());
+        }catch (Exception e){
+            System.err.println("Gia tri nhap vao khong hop le");
         }
 
 

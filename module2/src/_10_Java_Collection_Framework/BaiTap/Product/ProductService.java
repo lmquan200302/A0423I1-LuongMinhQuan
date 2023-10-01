@@ -64,7 +64,6 @@ public class ProductService {
             if(product.getName().indexOf(name) >=0){
                 System.out.println(product);
             }
-
         }
     }
 

@@ -50,7 +50,7 @@ public class TestProduct {
                 case 3:
                     System.out.print("Nhap ID san pham ban can xoa: ");
                     id = sc.nextInt();
-                    Product product1 = new Product(id);
+//                    Product product1 = new Product(id);
                     ProductService.deleteProduct(id);
 
                     break;
