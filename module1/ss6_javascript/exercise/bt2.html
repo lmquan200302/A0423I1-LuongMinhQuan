@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><b>Chuyển đổi nhiệt độ C sang nhiệt độ F</b></p>
+    <input type="text" name="" id="c" placeholder="Nhập nhiệt độ C">
+    <button onclick="chuyendoi()">Chuyển đổi</button>
+    <script>
+        function chuyendoi(){
+            let c = parseFloat(document.getElementById("c").value);
+            let ketqua = (c*9/5)+32
+            alert("Kết quả sau khi chuyển đổi là:"+ketqua);
+        }
+    </script>
+    
+
+</body>
+</html>

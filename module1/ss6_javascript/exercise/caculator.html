@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><B>CACULATOR</B></p>
+    <input type="text" id="input1" placeholder="Nhap so thu nhat">
+    <input type="text" id="input2" placeholder="Nhap so thu 2"> 
+    <br> <br>
+    <button onclick="cong()">(+)Summation</button>
+    <button onclick="tru()">(-)Subtraction</button>
+    <button onclick="nhan()">(X)Multiplication</button>
+    <button onclick="chia()">(/)Division</button>
+    
+    <script>
+        function cong(){
+           let o1 = parseFloat(document.getElementById("input1").value);
+           let o2 = parseFloat(document.getElementById("input2").value);
+           let ketqua = o1+o2;
+            alert("ket qua la:"+ ketqua);
+            
+        }
+
+        function tru(){
+            let o1 = parseFloat(document.getElementById("input1").value);
+            let o2 = parseFloat(document.getElementById("input2").value);
+            let ketqua = o1-o2;
+            alert("Ket qua la:"+ketqua);
+        }
+        function nhan(){
+           let o1 = parseFloat(document.getElementById("input1").value);
+           let o2 = parseFloat(document.getElementById("input2").value);
+           let ketqua = o1*o2;
+            alert("ket qua la:"+ ketqua);
+            
+        }
+
+        function chia(){
+            let o1 = parseFloat(document.getElementById("input1").value);
+            let o2 = parseFloat(document.getElementById("input2").value);
+            let ketqua = o1/o2;
+            alert("Tình có đẹp cũng là tình đã vỡ, tim anh giờ như chiếc bình đã vỡ, ta đã chọn cho mình cách rời xa, kỷ niệm bên nhau anh ví như cột điện, đi đâu cũng gặp nên chẳng thể nào quên:"+ketqua);
+        }
+        
+       
+        
+    </script>
+</body>
+</html>

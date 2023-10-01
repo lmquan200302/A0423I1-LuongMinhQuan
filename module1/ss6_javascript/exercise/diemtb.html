@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><b>Tính điểm trung bình</b></p> <br>
+    <input type="text" id="diemtoan" placeholder="Nhập điểm Toán">
+    <input type="text" id="diemly" placeholder="Nhập điểm Lý">
+    <input type="text" id="diemhoa" placeholder="Nhập điểm Hóa">
+    <button onclick="tinhdiem()">Tính điểm TB</button>
+    <script>
+        function tinhdiem(){
+            let diemtoan =parseFloat(document.getElementById("diemtoan").value);
+            let diemly = parseFloat(document.getElementById("diemly").value);
+            let diemhoa = parseFloat(document.getElementById("diemhoa").value);
+            let ketqua = (diemtoan+diemly+diemhoa)/3;
+            alert("Điểm trung bình là:"+ketqua);
+
+        }
+    </script>
+</body>
+</html>

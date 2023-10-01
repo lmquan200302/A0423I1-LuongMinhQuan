@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Amount</th> 
+            <td><input type="text" id="dauvao"></td></td>
+
+        </tr>
+        <tr>
+            <th>From Current</th>
+            <td><select name="" id="from">
+                <option value="vnd">VND</option>
+                <option value="usd">USD</option>
+            </select></td>
+        </tr>
+        <tr>
+            <th>To Current</th>
+            <td><select name="" id="to">
+                <option value="vnd">VND</option>
+                <option value="usd">USD</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><button onclick="daura()">Covert</button></td>
+        </tr>
+    </table>
+    <script>
+     function daura() {
+            let giatrivao = document.getElementById("dauvao").value;
+            let from = document.getElementById("from").value;
+            let to = document.getElementById("to").value;
+            if (to==from){
+                alert(giatrivao);
+            }
+            if(from=='vnd' && to=="usd"){
+                alert("so tien USD ma ban chuyen doi ra la"+giatrivao/23000);
+            }
+            else;
+            if(from=='usd' && to=="vnd"){
+                alert("So tien VND ma ban chuyen doi ra la"+giatrivao*23000);
+            }
+            else;
+            
+        }
+     
+    </script>
+
+</body>
+</html>
