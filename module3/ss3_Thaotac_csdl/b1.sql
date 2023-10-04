@@ -68,7 +68,8 @@ select * from student
 where left(studentname,1) = "h";
 
 -- hien thi thong tin cac lop hoc co thoi gian bat dau vao thang 12
-
+select * from class
+where date_format(startday,"%m") = "12";
 -- hien thi thong tin cac mon hoc co credit tu 2-3
 select * from subjectt 
 where credit between 2 and 3;
