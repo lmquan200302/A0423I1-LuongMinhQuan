@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+#head{
+    width: 100%;
+    height: 100px;
+    background-color: blueviolet;
+}
+#menu{
+    width: 25%;
+    height: 250px;
+    background-color: cadetblue;
+    float: left;
+}
+#content{
+    width: 75%;
+    height: 250px;
+    background-color: bisque;
+    float: left;
+
+}
+#footer{
+    width: 100%;
+    height: 100px;
+    background-color: brown;
+    clear: both;
+}
