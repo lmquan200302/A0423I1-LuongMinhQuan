@@ -1,12 +1,15 @@
 package Java;
 
+import java.util.Stack;
+
 public class Main {
     public static void main(String[] args) {
-        Quan quan = new Quan(1,"VKU",20,"20it951","QUAN","CNTT");
-        System.out.println(quan);
-        quan.eat();
-        quan.say();
-        quan.learn();
+        Stack<Integer> stack = new Stack<>();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        stack.push(4);
 
+        stack.pop();
     }
 }
