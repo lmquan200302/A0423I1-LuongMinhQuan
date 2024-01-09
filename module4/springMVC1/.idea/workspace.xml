@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5a92a03f-7519-41a9-afbf-776c2506aead" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../module3/BenhVien/Benhvien/src/main/java/com/example/benhvien/Controller/BenhanServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/BenhVien/Benhvien/src/main/java/com/example/benhvien/DAO/BenhanDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/BenhVien/Benhvien/src/main/java/com/example/benhvien/DAO/IBenhAn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/BenhVien/Benhvien/src/main/java/com/example/benhvien/Model/Benhan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/BenhVien/Benhvien/src/main/webapp/benhan/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/BenhVien/Benhvien/src/main/webapp/benhan/update.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Exam_module3/.idea/Exam_module3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Exam_module3/Exam_LuongMinhQuan/src/main/java/com/example/exam_luongminhquan/Controller/MuonsachServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Exam_module3/Exam_LuongMinhQuan/src/main/java/com/example/exam_luongminhquan/DAO/MuonSachDAO/IMuonsach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Exam_module3/Exam_LuongMinhQuan/src/main/java/com/example/exam_luongminhquan/DAO/MuonSachDAO/MuonSachDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Exam_module3/Exam_LuongMinhQuan/src/main/java/com/example/exam_luongminhquan/DAO/SachDAO/ISach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Exam_module3/Exam_LuongMinhQuan/src/main/java/com/example/exam_luongminhquan/DAO/SachDAO/SachDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Exam_module3/Exam_LuongMinhQuan/src/main/java/com/example/exam_luongminhquan/Model/Muonsach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Exam_module3/Exam_LuongMinhQuan/src/main/java/com/example/exam_luongminhquan/Model/Sach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Exam_module3/Exam_LuongMinhQuan/src/main/webapp/muonsach/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Exam_module3/Exam_LuongMinhQuan/src/main/webapp/muonsach/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Exam_module3/Exam_LuongMinhQuan/src/main/webapp/sach/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Exam_module3/Exam_LuongMinhQuan/src/main/webapp/sach/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Exam_module3_1/manager_thuvien/src/main/java/com/example/manager_thuvien/Controller/SachController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Exam_module3_1/manager_thuvien/src/main/java/com/example/manager_thuvien/Model/Sach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Exam_module3_1/manager_thuvien/src/main/java/com/example/manager_thuvien/SachDAO/ISach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Exam_module3_1/manager_thuvien/src/main/java/com/example/manager_thuvien/SachDAO/SachDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Exam_module3_1/manager_thuvien/src/main/webapp/Sach/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Furama/.idea/Furama.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Furama/Furama/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Furama/Furama/src/main/java/com/example/furama/Controller/NhanvienServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Furama/Furama/src/main/java/com/example/furama/DAO/NhanVien/INhanVien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Furama/Furama/src/main/java/com/example/furama/DAO/NhanVien/NhanVienDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Furama/Furama/src/main/java/com/example/furama/Model/NhanVien/NhanVien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Furama/Furama/src/main/webapp/furama/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Furama/Furama/src/main/webapp/furama/listKhachHang.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Furama/Furama/src/main/webapp/furama/listNhanVien.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ManagerFurama/src/main/java/com/example/managerfurama/Controller/ContactController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ManagerFurama/src/main/java/com/example/managerfurama/Controller/Contact_detailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ManagerFurama/src/main/java/com/example/managerfurama/Controller/DichVuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ManagerFurama/src/main/java/com/example/managerfurama/Controller/KhachHangController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ManagerFurama/src/main/java/com/example/managerfurama/DAO/ContactDAO/ContactDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ManagerFurama/src/main/java/com/example/managerfurama/DAO/ContactDAO/IContact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ManagerFurama/src/main/java/com/example/managerfurama/DAO/Contact_detailDAO/Contact_deltaiDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ManagerFurama/src/main/java/com/example/managerfurama/DAO/Contact_detailDAO/IContact_detail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ManagerFurama/src/main/java/com/example/managerfurama/Model/Contact/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ManagerFurama/src/main/java/com/example/managerfurama/Model/Contact_detail/Contact_detail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ManagerFurama/src/main/webapp/contact/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ManagerFurama/src/main/webapp/contact/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ManagerFurama/src/main/webapp/contact_detail/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ManagerFurama/src/main/webapp/contact_detail/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ManagerFurama/src/main/webapp/dichvu/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ManagerFurama/src/main/webapp/dichvu/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ManagerFurama/src/main/webapp/dichvu/update.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ManagerFurama/src/main/webapp/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ManagerFurama/src/main/webapp/khachhang/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ManagerFurama/src/main/webapp/khachhang/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ManagerFurama/src/main/webapp/khachhang/update.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ManagerFurama/src/main/webapp/nhanvien/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ManagerFurama/src/main/webapp/nhanvien/listNhanVien.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ManagerFurama/src/main/webapp/nhanvien/update.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Thuvien/.idea/Thuvien.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Thuvien/Thuvien/src/main/java/com/example/thuvien/Controller/SachServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Thuvien/Thuvien/src/main/java/com/example/thuvien/DAO/SACH/MuonSach/IMuonSach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Thuvien/Thuvien/src/main/java/com/example/thuvien/DAO/SACH/MuonSach/MuonSachDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Thuvien/Thuvien/src/main/java/com/example/thuvien/DAO/SACH/SachDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Thuvien/Thuvien/src/main/java/com/example/thuvien/DAO/SACH/iSach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Thuvien/Thuvien/src/main/java/com/example/thuvien/Model/Hocsinh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Thuvien/Thuvien/src/main/java/com/example/thuvien/Model/Sach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Thuvien/Thuvien/src/main/java/com/example/thuvien/Model/Themuonsach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Thuvien/Thuvien/src/main/webapp/muonsach/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Thuvien/Thuvien/src/main/webapp/muonsach/muonsach.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/Thuvien/Thuvien/src/main/webapp/sach/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/exam/Thuvien/src/main/java/com/example/thuvien/Controller/SachServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/exam/Thuvien/src/main/java/com/example/thuvien/DAO/Sach/iSach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/exam/Thuvien/src/main/java/com/example/thuvien/DAO/Sach/sachDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/exam/Thuvien/src/main/java/com/example/thuvien/Model/sach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/exam/Thuvien/src/main/webapp/sach/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ss10_CaseStudy/Furama/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ss10_CaseStudy/Furama/src/main/java/com/example/furama/Controller/CustomerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ss10_CaseStudy/Furama/src/main/java/com/example/furama/DAO/CustomerDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ss10_CaseStudy/Furama/src/main/java/com/example/furama/DAO/ICustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ss10_CaseStudy/Furama/src/main/java/com/example/furama/Model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ss10_CaseStudy/Furama/src/main/webapp/furama/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ss10_CaseStudy/Furama/src/main/webapp/furama/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ss9_JDBC_CRUD/.idea/ss9_JDBC_CRUD.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ss9_JDBC_CRUD/User/src/main/java/com/example/user/Controller/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ss9_JDBC_CRUD/User/src/main/java/com/example/user/DAO/IUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ss9_JDBC_CRUD/User/src/main/java/com/example/user/DAO/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ss9_JDBC_CRUD/User/src/main/java/com/example/user/Model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ss9_JDBC_CRUD/User/src/main/java/com/example/user/Service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ss9_JDBC_CRUD/User/src/main/java/com/example/user/Service/UserSevice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ss9_JDBC_CRUD/User/src/main/webapp/user/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ss9_JDBC_CRUD/User/src/main/webapp/user/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/ss9_JDBC_CRUD/User/src/main/webapp/user/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss1_SpringMVC/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss1_SpringMVC/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss1_SpringMVC/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/Product/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/Product/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/ss8_JSTL_MVC/Baitap/Product/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/ss8_JSTL_MVC/Baitap/Product/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/ss8_JSTL_MVC/Baitap/Product/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/ss8_JSTL_MVC/Baitap/Product/.idea/vcs.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="springMVC1" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="2a83KVriYYQrYyHPX5mMle9Y55C" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/codegym/A0423I1-LuongMinhQuan/module4/springMVC1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable",
+    "spring.configuration.checksum": "2abcd0420ccd156b17538ac22c3f6ab2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\codegym\A0423I1-LuongMinhQuan\module4\springMVC1\src\main\webapp\WEB-INF" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\codegym\A0423I1-LuongMinhQuan\module4\springMVC1\src\main\webapp\WEB-INF" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.82" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.82" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Gradle : vn.codegym : springMVC1-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="f1cc10eb-fa47-41ec-a4da-02569e59a428" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53799" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : vn.codegym : springMVC1-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5a92a03f-7519-41a9-afbf-776c2506aead" name="Changes" comment="" />
+      <created>1703686320067</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1703686320067</updated>
+      <workItem from="1703686321094" duration="1029000" />
+      <workItem from="1704284838222" duration="124000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
